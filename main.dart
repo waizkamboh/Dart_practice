@@ -94,15 +94,39 @@
 //Write a C program to enter length in centimeter and convert it into meter and kilometer.
 // 1m = 100cm
 // 1km = 100000cm
-import 'dart:ffi';
+// import 'dart:ffi';
+// import 'dart:io';
+
+// void main() {
+//   double length, meter, kiloMeter;
+//   print("Enter Length In CM");
+//   length = double.parse(stdin.readLineSync()!);
+//   meter = length / 100;
+//   kiloMeter = length / 100000;
+//   print("Length in meter: $meter");
+//   print("Length in kilometer: $kiloMeter");
+// }
+
+//Write a C program to enter temperature in Celsius and convert it into Fahrenheit.
+// F = (c * 9/5) + 32
+// import 'dart:io';
+
+// void main() {
+//   double celsius, fahrenheit;
+//   print("Enter celsius temperature");
+//   celsius = double.parse(stdin.readLineSync()!);
+//   fahrenheit = (celsius * 9 / 5) + 32;
+//   print("Fahrenheit Temperature: $fahrenheit");
+// }
+
+//Write a C program to enter temperature in Fahrenheit and convert to Celsius
+// C = (F - 32) * 5/9
 import 'dart:io';
 
 void main() {
-  double length, meter, kiloMeter;
-  print("Enter Length In CM");
-  length = double.parse(stdin.readLineSync()!);
-  meter = length / 100;
-  kiloMeter = length / 100000;
-  print("Length in meter: $meter");
-  print("Length in kilometer: $kiloMeter");
+  double celsius, fahrenheit;
+  print("Enter Fahrenheit temperature");
+  fahrenheit = double.parse(stdin.readLineSync()!);
+  celsius = (fahrenheit - 32) * 5 / 9;
+  print("Celsius Temperature: $celsius");
 }
