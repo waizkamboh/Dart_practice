@@ -77,16 +77,32 @@
 //   print("Area of rectangle: $area");
 // }
 
-//Write a C program to enter radius of a circle and find its diameter, circumference and area, d = 2*r, c = 2*pi*r, a = pi*r*r.
+// //Write a C program to enter radius of a circle and find its diameter, circumference and area, d = 2*r, c = 2*pi*r, a = pi*r*r.
+// import 'dart:io';
+
+// void main() {
+//   print("Enter a radius of circle");
+//   double r = double.parse(stdin.readLineSync()!);
+//   double d = 2 * r;
+//   print("Diameter of circle is: $d");
+//   double c = 2 * 3.14 * r;
+//   print("Circumference of circle is: $c");
+//   double a = 3.14 * r * r;
+//   print("Area of circle is: $a");
+// }
+
+//Write a C program to enter length in centimeter and convert it into meter and kilometer.
+// 1m = 100cm
+// 1km = 100000cm
+import 'dart:ffi';
 import 'dart:io';
 
 void main() {
-  print("Enter a radius of circle");
-  double r = double.parse(stdin.readLineSync()!);
-  double d = 2 * r;
-  print("Diameter of circle is: $d");
-  double c = 2 * 3.14 * r;
-  print("Circumference of circle is: $c");
-  double a = 3.14 * r * r;
-  print("Area of circle is: $a");
+  double length, meter, kiloMeter;
+  print("Enter Length In CM");
+  length = double.parse(stdin.readLineSync()!);
+  meter = length / 100;
+  kiloMeter = length / 100000;
+  print("Length in meter: $meter");
+  print("Length in kilometer: $kiloMeter");
 }
