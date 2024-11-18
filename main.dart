@@ -170,14 +170,28 @@
 // }
 
 // Write a program to input number from user and find wheather number is odd or even.
+// import 'dart:io';
+
+// void main() {
+//   print("Enter a number");
+//   int a = int.parse(stdin.readLineSync()!);
+//   if (a % 2 == 0) {
+//     print("$a is even");
+//   } else {
+//     print("$a is odd");
+//   }
+// }
+
+// Write a program to enter number from user and find sum from 1 to N.
+
 import 'dart:io';
 
 void main() {
+  int number, sum = 0;
   print("Enter a number");
-  int a = int.parse(stdin.readLineSync()!);
-  if (a % 2 == 0) {
-    print("$a is even");
-  } else {
-    print("$a is odd");
+  number = int.parse(stdin.readLineSync()!);
+  for (int i = 1; i <= number; i++) {
+    sum = sum + i;
   }
+  print("Sum of number from 1 to N: $sum");
 }
