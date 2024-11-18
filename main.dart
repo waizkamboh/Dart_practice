@@ -154,16 +154,30 @@
 //   print("Area of a square is: $area");
 // }
 
+// Write a program to enter two number and find minimum of two number.
+// import 'dart:io';
+
+// void main() {
+//   print("Enter first number");
+//   int a = int.parse(stdin.readLineSync()!);
+//   print("Enter second number");
+//   int b = int.parse(stdin.readLineSync()!);
+//   if (a < b) {
+//     print("$a is minimum");
+//   } else {
+//     print("$b is minimum");
+//   }
+// }
+
+// Write a program to input number from user and find wheather number is odd or even.
 import 'dart:io';
 
 void main() {
-  print("Enter first number");
+  print("Enter a number");
   int a = int.parse(stdin.readLineSync()!);
-  print("Enter second number");
-  int b = int.parse(stdin.readLineSync()!);
-  if (a < b) {
-    print("$a is minimum");
+  if (a % 2 == 0) {
+    print("$a is even");
   } else {
-    print("$b is minimum");
+    print("$a is odd");
   }
 }
