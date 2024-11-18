@@ -183,15 +183,33 @@
 // }
 
 // Write a program to enter number from user and find sum from 1 to N.
+// import 'dart:io';
 
+// void main() {
+//   int number, sum = 0;
+//   print("Enter a number");
+//   number = int.parse(stdin.readLineSync()!);
+//   for (int i = 1; i <= number; i++) {
+//     sum = sum + i;
+//   }
+//   print("Sum of number from 1 to N: $sum");
+// }
+
+// Write a progrm to find prime number.
 import 'dart:io';
 
 void main() {
-  int number, sum = 0;
+  int number, count = 0;
   print("Enter a number");
   number = int.parse(stdin.readLineSync()!);
   for (int i = 1; i <= number; i++) {
-    sum = sum + i;
+    if (number % i == 0) {
+      count++;
+    }
   }
-  print("Sum of number from 1 to N: $sum");
+  if (count == 2) {
+    print("$number is prime");
+  } else {
+    print("$number is not prime");
+  }
 }
