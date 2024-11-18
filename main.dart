@@ -145,11 +145,25 @@
 // }
 
 // Write a program to find area of a square.
+// import 'dart:io';
+
+// void main() {
+//   print("Enter a side of square");
+//   int a = int.parse(stdin.readLineSync()!);
+//   int area = a * a;
+//   print("Area of a square is: $area");
+// }
+
 import 'dart:io';
 
 void main() {
-  print("Enter a side of square");
+  print("Enter first number");
   int a = int.parse(stdin.readLineSync()!);
-  int area = a * a;
-  print("Area of a square is: $area");
+  print("Enter second number");
+  int b = int.parse(stdin.readLineSync()!);
+  if (a < b) {
+    print("$a is minimum");
+  } else {
+    print("$b is minimum");
+  }
 }
