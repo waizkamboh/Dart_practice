@@ -121,12 +121,25 @@
 
 //Write a C program to enter temperature in Fahrenheit and convert to Celsius
 // C = (F - 32) * 5/9
+// import 'dart:io';
+
+// void main() {
+//   double celsius, fahrenheit;
+//   print("Enter Fahrenheit temperature");
+//   fahrenheit = double.parse(stdin.readLineSync()!);
+//   celsius = (fahrenheit - 32) * 5 / 9;
+//   print("Celsius Temperature: $celsius");
+// }
+
+// Write a program input two number from user and sum of two number
+
 import 'dart:io';
 
 void main() {
-  double celsius, fahrenheit;
-  print("Enter Fahrenheit temperature");
-  fahrenheit = double.parse(stdin.readLineSync()!);
-  celsius = (fahrenheit - 32) * 5 / 9;
-  print("Celsius Temperature: $celsius");
+  print("Enter first number");
+  int a = int.parse(stdin.readLineSync()!);
+  print("Enter second number");
+  int b = int.parse(stdin.readLineSync()!);
+  int sum = a + b;
+  print("Sum of two numbers is: $sum");
 }
