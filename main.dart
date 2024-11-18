@@ -133,13 +133,23 @@
 
 // Write a program input two number from user and sum of two number
 
+// import 'dart:io';
+
+// void main() {
+//   print("Enter first number");
+//   int a = int.parse(stdin.readLineSync()!);
+//   print("Enter second number");
+//   int b = int.parse(stdin.readLineSync()!);
+//   int sum = a + b;
+//   print("Sum of two numbers is: $sum");
+// }
+
+// Write a program to find area of a square.
 import 'dart:io';
 
 void main() {
-  print("Enter first number");
+  print("Enter a side of square");
   int a = int.parse(stdin.readLineSync()!);
-  print("Enter second number");
-  int b = int.parse(stdin.readLineSync()!);
-  int sum = a + b;
-  print("Sum of two numbers is: $sum");
+  int area = a * a;
+  print("Area of a square is: $area");
 }
