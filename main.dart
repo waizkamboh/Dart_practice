@@ -196,20 +196,33 @@
 // }
 
 // Write a progrm to find prime number.
+// import 'dart:io';
+
+// void main() {
+//   int number, count = 0;
+//   print("Enter a number");
+//   number = int.parse(stdin.readLineSync()!);
+//   for (int i = 1; i <= number; i++) {
+//     if (number % i == 0) {
+//       count++;
+//     }
+//   }
+//   if (count == 2) {
+//     print("$number is prime");
+//   } else {
+//     print("$number is not prime");
+//   }
+// }
+
+//Write a program in dart to find a factorial of number
 import 'dart:io';
 
 void main() {
-  int number, count = 0;
-  print("Enter a number");
-  number = int.parse(stdin.readLineSync()!);
-  for (int i = 1; i <= number; i++) {
-    if (number % i == 0) {
-      count++;
-    }
+  print("Enter factorial number");
+  int n = int.parse(stdin.readLineSync()!);
+  int f = 1;
+  for (int i = 1; i <= n; i++) {
+    f = f * i;
   }
-  if (count == 2) {
-    print("$number is prime");
-  } else {
-    print("$number is not prime");
-  }
+  print("Factorial of $n is: $f");
 }
