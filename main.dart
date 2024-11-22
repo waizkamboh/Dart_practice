@@ -227,14 +227,27 @@
 //   print("Factorial of $n is: $f");
 // }
 // Write a program in dart user enter age and find if they should get driving license or not.
+// import 'dart:io';
+
+// void main() {
+//   print("Enter age of the user");
+//   int age = int.parse(stdin.readLineSync()!);
+//   if (age >= 18) {
+//     print("Qualify for license");
+//   } else {
+//     print("DisQualify for license");
+//   }
+// }
+
+//Find chrachter lowercase or uppercase
 import 'dart:io';
 
 void main() {
-  print("Enter age of the user");
-  int age = int.parse(stdin.readLineSync()!);
-  if (age >= 18) {
-    print("Qualify for license");
+  print("Enter a charachter");
+  String ch = stdin.readLineSync()!;
+  if (ch == ch.toLowerCase()) {
+    print("Lowercase");
   } else {
-    print("Dis Qualify for license");
+    print("Uppercase");
   }
 }
