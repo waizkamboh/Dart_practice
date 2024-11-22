@@ -215,14 +215,26 @@
 // }
 
 //Write a program in dart to find a factorial of number
+// import 'dart:io';
+
+// void main() {
+//   print("Enter factorial number");
+//   int n = int.parse(stdin.readLineSync()!);
+//   int f = 1;
+//   for (int i = 1; i <= n; i++) {
+//     f = f * i;
+//   }
+//   print("Factorial of $n is: $f");
+// }
+// Write a program in dart user enter age and find if they should get driving license or not.
 import 'dart:io';
 
 void main() {
-  print("Enter factorial number");
-  int n = int.parse(stdin.readLineSync()!);
-  int f = 1;
-  for (int i = 1; i <= n; i++) {
-    f = f * i;
+  print("Enter age of the user");
+  int age = int.parse(stdin.readLineSync()!);
+  if (age >= 18) {
+    print("Qualify for license");
+  } else {
+    print("Dis Qualify for license");
   }
-  print("Factorial of $n is: $f");
 }
